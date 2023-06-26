@@ -75,40 +75,40 @@
                     <button type="button" class="rounded-full p-2 bg-[rgba(136,136,136,.03)] block lg:hidden" onclick="onClickShowMobileSidebar()">
                         <img src="./public//icons/hamburger.svg" alt="Hamburger Menu">
                     </button>
-                    <a href="/" class="w-full">
-                        <img src="./public/images/justin-logo.png" alt="Logo" class="w-[15em] lg:w-[18em]">
-                    </a>
+                    <button type="button" class="w-full">
+                        <img src="./public/images/justin-logo.png" alt="Logo" class="w-[15em]">
+                    </button>
                 </div>
                 <div class="flex-grow hidden lg:block">
                     <ul class="flex gap-10 justify-center primary-menu">
                         <li>
                             <button type="button" class="flex flex-col text-white hover:text-gray-400" onclick="onClickScrollToSection('main-section')">
                                 <span class="flex justify-end w-full text-xxs opacity-75">01</span>
-                                <span class="text-xl">// home</span>
+                                <span class="text-md">// home</span>
                             </button>
                         </li>
                         <li>
                             <button type="button" class="flex flex-col text-white hover:text-gray-400" onclick="onClickScrollToSection('expertise-section')">
                                 <span class="flex justify-end w-full text-xxs opacity-75">02</span>
-                                <span class="text-xl">// expertise</span>
+                                <span class="text-md">// expertise</span>
                             </button>
                         </li>
                         <li>
                             <button type="button" class="flex flex-col text-white hover:text-gray-400" onclick="onClickScrollToSection('work-section')">
                                 <span class="flex justify-end w-full text-xxs opacity-75">03</span>
-                                <span class="text-xl">// work</span>
+                                <span class="text-md">// work</span>
                             </a>
                         </li>
                         <li>
                             <button type="button" class="flex flex-col text-white hover:text-gray-400" onclick="onClickScrollToSection('experience-section')">
                                 <span class="flex justify-end w-full text-xxs opacity-75">04</span>
-                                <span class="text-xl">// experience</span>
+                                <span class="text-md">// experience</span>
                             </button>
                         </li>
                         <li>
                             <button type="button" class="flex flex-col text-white hover:text-gray-400" onclick="onClickScrollToSection('contact-section')">
                                 <span class="flex justify-end w-full text-xxs opacity-75">05</span>
-                                <span class="text-xl">// contact</span>
+                                <span class="text-md">// contact</span>
                             </button>
                         </li>
                     </ul>
@@ -121,31 +121,31 @@
                     <li>
                         <button type="button" class="flex flex-col text-[#59c8ff] hover:text-gray-400" onclick="onClickScrollToSection('main-section')">
                             <span class="flex justify-end w-full text-xxs opacity-75">01</span>
-                            <span class="text-xl">// home</span>
+                            <span class="text-md">// home</span>
                         </button>
                     </li>
                     <li>
                         <button type="button" class="flex flex-col text-[#59c8ff] hover:text-gray-400" onclick="onClickScrollToSection('expertise-section')">
                             <span class="flex justify-end w-full text-xxs opacity-75">02</span>
-                            <span class="text-xl">// expertise</span>
+                            <span class="text-md">// expertise</span>
                         </button>
                     </li>
                     <li>
                         <button type="button" class="flex flex-col text-[#59c8ff] hover:text-gray-400" onclick="onClickScrollToSection('work-section')">
                             <span class="flex justify-end w-full text-xxs opacity-75">03</span>
-                            <span class="text-xl">// work</span>
+                            <span class="text-md">// work</span>
                         </a>
                     </li>
                     <li>
                         <button type="button" class="flex flex-col text-[#59c8ff] hover:text-gray-400" onclick="onClickScrollToSection('experience-section')">
                             <span class="flex justify-end w-full text-xxs opacity-75">04</span>
-                            <span class="text-xl">// experience</span>
+                            <span class="text-md">// experience</span>
                         </button>
                     </li>
                     <li>
                         <button type="button" class="flex flex-col text-[#59c8ff] hover:text-gray-400" onclick="onClickScrollToSection('contact-section')">
                             <span class="flex justify-end w-full text-xxs opacity-75">05</span>
-                            <span class="text-xl">// contact</span>
+                            <span class="text-md">// contact</span>
                         </button>
                     </li>
                 </ul>
@@ -170,7 +170,7 @@
         <section id="expertise-section">
             <div class="pt-[30px] lg:pt-[100px] px-0 lg:px-[50px] pb-0 flex justify-center">
                 <div class="w-full p-5 lg:w-[80%]">
-                    <h2 class="text-center font-semibold text-5xl lg:text-8xl">My Expertise</h2>
+                    <h2 class="text-center font-semibold text-5xl lg:text-7xl">My Expertise</h2>
                     <div class="flex flex-col lg:flex-row gap-3 lg:gap-0 justify-center mt-12 lg:mt-20">
                         <div class="border-[3px] lg:border-y-[3px] lg:border-l-[3px] lg:border-r-[1.5px] border-[#a3a3a3] border-solid py-10 px-8 w-full lg:w-1/3">
                             <div class="flex gap-5 items-center">
@@ -221,7 +221,7 @@
                 </div>
             </div>
             <div class="flex justify-center mt-[-72px] lg:mt-[-50px] mx-8">
-                <img src="./public/images/hello-world-html-code.webp" alt="Hello World HTML Code" class="opacity-20">
+                <img src="./public/images/hello-world-html-code.webp" alt="Hello World HTML Code" class="opacity-20 w-[35%]">
             </div>
         </section>
         <section id="work-section">
@@ -284,10 +284,10 @@
             navUnderMainSection.classList.add("hidden");
             arrowUpButton.classList.add("hidden");
 
-            if(!mobileCheck() && expertiseSection.getBoundingClientRect().top <= 1000) {
+            if(!mobileCheck() && expertiseSection.getBoundingClientRect().top <= 820) {
                 navUnderMainSection.classList.remove("hidden");
             }
-            if(expertiseSection.getBoundingClientRect().top <= 900) {
+            if(expertiseSection.getBoundingClientRect().top <= 520) {
                 arrowUpButton.classList.remove("hidden");
             }
         });
