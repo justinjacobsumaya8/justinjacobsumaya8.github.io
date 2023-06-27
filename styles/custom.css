@@ -1,13 +1,20 @@
-html,body {
+html,
+body {
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
+    font-family: "Poppins", Sans-serif;
 }
 
-h2, h5 {
+h2,
+h5 {
     font-family: "Poppins", Sans-serif;
+}
+
+.roboto-mono-sans-serif {
+    font-family: "Roboto Mono", sans-serif;
 }
 
 #main-section {
@@ -23,9 +30,9 @@ h2, h5 {
     left: 0;
     position: absolute;
     background-color: transparent;
-    background-image: linear-gradient(180deg,#00000012 60%,#1a191d 100%);
+    background-image: linear-gradient(180deg, #00000012 60%, #1a191d 100%);
     opacity: 1;
-    transition: background .3s,border-radius .3s,opacity .3s;
+    transition: background .3s, border-radius .3s, opacity .3s;
 }
 
 #main-section .heading-title {
@@ -34,7 +41,7 @@ h2, h5 {
     font-size: 8vw;
     text-transform: uppercase;
     letter-spacing: 2.2px;
-    text-shadow: 1px 3px 11px rgba(0,0,0,.3);
+    text-shadow: 1px 3px 11px rgba(0, 0, 0, .3);
 }
 
 #main-section .heading-sub-title {
@@ -125,7 +132,7 @@ h2, h5 {
 }
 
 .styled-h3 {
-    font-family: "Roboto Mono",Sans-serif;
+    font-family: "Roboto Mono", Sans-serif;
     font-weight: 300;
     line-height: 1.4em;
     padding-left: 35px;
@@ -159,6 +166,10 @@ h2, h5 {
     font-size: 15px;
 }
 
+.bg-blur {
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(15px);
+}
 
 @media only screen and (max-width: 767px) {
     #main-section .heading-title {
