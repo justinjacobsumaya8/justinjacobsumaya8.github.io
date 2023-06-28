@@ -1,0 +1,119 @@
+<div>
+    <h3 class="text-2xl mb-3 font-bold">
+        Kaddy Connect
+    </h3>
+    <div class="flex gap-2">
+        <span class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+            PHP Laravel
+        </span>
+        <span class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+            Lumen
+        </span>
+        <span class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+            React - Next.js
+        </span>
+        <span class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+            Redux
+        </span>
+        <span class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+            Bootstrap
+        </span>
+        <span class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+            MySQL
+        </span>
+    </div>
+    <div class="flex gap-2 mt-3">
+        <span class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+            Amazon Web Services (AWS)
+        </span>
+        <span class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+            3rd Party Integrations
+        </span>
+    </div>
+    <div class="my-6">
+        <p class="text-sm tracking-wide text-gray-300">
+            Formerly "Winedepot", a warehouse and fulfilment service for wine suppliers in
+            Australia.
+            <br>
+            <br>
+            Kaddy is a B2B platform that allows wine retailers to access inventory held
+            on consignment from thousands of suppliers and drop-ship their orders
+            directly to their consumers from a network of strategically placed depots.
+            It is Australia’s leading wholesale beverage marketplace. Supported by an
+            end-to-end national fulfilment solution.
+        </p>
+    </div>
+    <div>
+        <img src="./public/images/projects/kaddy/kaddy-connect-dashboard-cropped.png" alt="Kaddy Dashboard"
+            class="w-full">
+    </div>
+    <div class="mt-5">
+        <h6 class="text-xl font-bold tracking-wider text-gray-300 mb-2">
+            My Work
+        </h6>
+        <p class="text-sm text-gray-300">
+            My primary work with Kaddy were daily support and maintenance that includes
+            development, design, and QA, working along with other team members.
+            <br>
+            <br>
+            I have also been assigned to maintain a microservice that is built using
+            Lumen framework. The functionality was to update order consignments from
+            partner couriers within Australia such as Australia Post,
+            CouriersPlease, Border Express, and company owned Kaddy Fulfilment.
+        </p>
+        <h6 class="text-xl font-bold tracking-wider text-gray-300 mt-5 mb-2">
+            My best contribution
+        </h6>
+        <div class="text-sm text-gray-300">
+            <div>
+                I was assigned to automate the order upload - a supplier integration.
+                <br>
+                <br>
+                Suppliers will just send an
+                email to one of our programmed email, and any attachments within that email
+                that's in CSV format will be processed
+                as orders automatically.
+            </div>
+            <div class="mt-5 text-md font-semibold">
+                The process involves:
+            </div>
+            <div class="mt-2">
+                1. First, Kaddy Admin will map the supplier's CSV sample order
+                format.
+            </div>
+            <div class="mt-2">
+                2. Second, Kaddy Admin will then set a source email. This is where the
+                supplier can
+                send email into.
+            </div>
+            <div class="mt-2">
+                3. Then Kaddy Admin will set the integration as confirmed. After this,
+                supplier for that integration can now start sending email.
+            </div>
+            <div class="mt-2">
+                4. The recipient email that the supplier can send into needs to be a
+                verified email in <span class="font-semibold">AWS SES</span>.
+            </div>
+            <div class="mt-2">
+                5. Once a supplier starts sending email, <span class="font-semibold">AWS
+                    SES</span> will be notified and
+                trigger a <span class="font-semibold">Lambda</span> function to process the
+                attachments and will be sent to <span class="font-semibold">AWS S3</span>.
+            </div>
+            <div class="mt-2">
+                6. A command console that is set on <span class="font-semibold">cron</span>
+                will process the attachments from <span class="font-semibold">AWS S3</span>
+                into orders.
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="text-md font-semibold tracking-wider text-gray-300 my-5">
+            A screen record on how the supplier integration's CSV order parser works.
+        </div>
+        <video class="w-full" height="240" controls>
+            <source src="../public/videos/supplier-integration.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>

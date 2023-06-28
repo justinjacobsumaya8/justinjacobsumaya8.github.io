@@ -68,10 +68,13 @@
                 <div class="flex items-center gap-6 lg:gap-3">
                     <button type="button" class="rounded-full p-2 bg-[rgba(136,136,136,.03)] block lg:hidden"
                         onclick="onClickShowMobileSidebar()">
-                        <img src="./public//icons/hamburger.svg" alt="Hamburger Menu">
+                        <img src="./public//icons/hamburger.svg" class="w-10" alt="Hamburger Menu">
                     </button>
                     <button type="button" class="w-full">
-                        <img src="./public/images/justin-logo.png" alt="Logo" class="w-[15em]">
+                        <span class="roboto-mono-sans-serif text-2xl text-blue-300">
+                            &lt;justin.jps/&gt;
+                        </span>
+                        <!-- <img src="./public/images/justin-logo.png" alt="Logo" class="w-[15em]"> -->
                     </button>
                 </div>
                 <div class="flex-grow hidden lg:block">
@@ -164,7 +167,7 @@
     <div class="bg-[#1a191d] text-white">
         <section id="main-section" class="relative">
             <div class="background-overlay"></div>
-            <div class="flex h-screen">
+            <div class="flex h-screen p">
                 <div class="m-auto text-center z-10">
                     <h1 class="heading-title">Justin Sumaya</h1>
                     <h5 class="heading-sub-title">Software Engineer, frontend & backend developer.</h5>
@@ -193,8 +196,9 @@
                             <div class="relative">
                                 <div class="container-styled-h3">
                                     <div class="styled-h3">
-                                        Experienced in both functional and OOP: Dart, Python, Java, JavaScript,
-                                        TypeScript.
+                                        Experienced building a platform from planning to deployment.
+                                        <br><br>
+                                        Designed algorithms and processes to create new software programs and systems.
                                     </div>
                                 </div>
                             </div>
@@ -204,14 +208,18 @@
                             <div class="flex gap-5 items-center">
                                 <img src="./public/icons/react.svg" alt="React">
                                 <h5 class="text-2xl font-semibold">
-                                    <span class="relative underline-blue z-10">Frontend Dev</span> <br> React.js, Vue.js
+                                    <span class="relative underline-blue z-10">Frontend Dev</span> <br> React.js,
+                                    Next.js, Vue.js
                                 </h5>
                             </div>
                             <div class="relative">
                                 <div class="container-styled-h3">
                                     <div class="styled-h3">
-                                        Passionate about UI/UX. Over 4 years of development experience in HTML, CSS, JS,
-                                        React and Next.js frameworks.
+                                        Creating pixel-perfect, responsive design, and reusable components for easy
+                                        maintenance.
+                                        <br><br>
+                                        Experienced in
+                                        HTML, CSS, JavaScript, React.js, Next.js, and Vue.js frameworks.
                                     </div>
                                 </div>
                             </div>
@@ -222,14 +230,17 @@
                                 <img src="./public/icons/calculate.svg" alt="Calculate">
                                 <h5 class="text-2xl font-semibold">
                                     <span class="relative underline-yellow z-10">Backend Dev</span> <br> PHP Laravel,
-                                    Java, Golang
+                                    SQL DB, AWS
                                 </h5>
                             </div>
                             <div class="relative">
                                 <div class="container-styled-h3">
                                     <div class="styled-h3">
-                                        Experienced in both functional and OOP: Dart, Python, Java, JavaScript,
-                                        TypeScript.
+                                        Passionate about solving technical problems and handling data processes.
+                                        <br><br>
+                                        Experienced with SQL and NoSQL databases such as MySQL and
+                                        Firebase. <br><br>Experienced as well with cloud technologies such as AWS
+                                        and GoDaddy.
                                     </div>
                                 </div>
                             </div>
@@ -246,9 +257,11 @@
             <div class="text-center pt-8 lg:pt-[80px]">
                 <h2 class="text-4xl lg:text-7xl font-semibold">Previous Work</h2>
                 <div class="flex justify-center mt-5">
-                    <div class="text-md lg:text-lg roboto-mono-sans-serif w-full lg:w-3/5">
-                        Deployed scalable travel, event and telemedicine web and hybrid mobile apps using React SPA and
-                        PWA.
+                    <div class="text-md roboto-mono-sans-serif w-full lg:w-3/5">
+                        Full-stack development within 4 years of total work experience.
+                        <br>
+                        Love to learn, grow, adapt, and willing to learn tech stacks that are beyond my current skill
+                        set.
                     </div>
                 </div>
             </div>
@@ -262,12 +275,16 @@
                         </button>
                         <div class="p-5">
                             <button type="button" onclick="onClickToggleShowWorkModal('open', 'work-kaddy-connect')">
-                                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Kaddy
-                                    Connect (Formerly WineDepot)</h5>
+                                <h5 class="mb-2 text-xl font-bold tracking-tight text-white">
+                                    Kaddy Connect
+                                </h5>
                             </button>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Software Development</p>
-                            <a href="#"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            <p class="mb-3 font-normal text-gray-400">
+                                Formerly "Winedepot", a warehouse and fulfilment service for wine suppliers located in
+                                Australia.
+                            </p>
+                            <button type="button" onclick="onClickToggleShowWorkModal('open', 'work-kaddy-connect')"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800">
                                 View project
                                 <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor"
                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -275,23 +292,28 @@
                                         d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                                         clip-rule="evenodd"></path>
                                 </svg>
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <div class="max-w-md rounded-lg border border-gray-500 lg:border-none shadow bg-[#201f23]">
                         <button type="button" onclick="onClickToggleShowWorkModal('open', 'work-kaddy-tracking')">
                             <img class="rounded-t-lg opacity-75 hover:opacity-100"
-                                src="./public/images/projects/kaddy/kaddy-tracking-site.png"
+                                src="./public/images/projects/kaddy/kaddy-tracking-site-result-cropped.png"
                                 alt="Kaddy Tracking Site" />
                         </button>
                         <div class="p-5">
                             <button type="button" onclick="onClickToggleShowWorkModal('open', 'work-kaddy-tracking')">
-                                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Kaddy
-                                    Tracking Site</h5>
+                                <h5 class="mb-2 text-xl font-bold tracking-tight text-white">
+                                    Kaddy Connect - Tracking Site
+                                </h5>
                             </button>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Software Development</p>
-                            <a href="#"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            <p class="mb-3 font-normal text-gray-400">
+                                A platform where Kaddy suppliers and their
+                                customers can
+                                track the status of an order using a tracking number.
+                            </p>
+                            <button type="button" onclick="onClickToggleShowWorkModal('open', 'work-kaddy-tracking')"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800">
                                 View project
                                 <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor"
                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -299,7 +321,7 @@
                                         d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                                         clip-rule="evenodd"></path>
                                 </svg>
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <div class="max-w-md rounded-lg border border-gray-500 lg:border-none shadow bg-[#201f23]">
@@ -309,12 +331,14 @@
                         </button>
                         <div class="p-5">
                             <button type="button" onclick="onClickToggleShowWorkModal('open', 'work-ncmc-sis')">
-                                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">North
-                                    Central Mindanao College (NCMC) - School Information System</h5>
+                                <h5 class="mb-2 text-xl font-bold tracking-tight text-white">
+                                    NCMC - School Information System
+                                </h5>
                             </button>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Software Development</p>
-                            <a href="#"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            <p class="mb-3 font-normal text-gray-400">NCMC is a leading research and community-based
+                                institution located in Maranding, Lanao del Norte, Philippines.</p>
+                            <button type="button" onclick="onClickToggleShowWorkModal('open', 'work-ncmc-sis')"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800">
                                 View project
                                 <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor"
                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -322,7 +346,7 @@
                                         d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                                         clip-rule="evenodd"></path>
                                 </svg>
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -334,12 +358,15 @@
                         </button>
                         <div class="p-5">
                             <button type="button" onclick="onClickToggleShowWorkModal('open', 'work-ncmc-web')">
-                                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">North
-                                    Central Mindanao College (NCMC) - School Website</h5>
+                                <h5 class="mb-2 text-xl font-bold tracking-tight text-white">
+                                    NCMC - School Website
+                                </h5>
                             </button>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Software Development</p>
-                            <a href="#"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            <p class="mb-3 font-normal text-gray-400">NCMC's official school website using Laravel 5.
+                                Developed a CMS to dynamically load the content.
+                            </p>
+                            <button type="button" onclick="onClickToggleShowWorkModal('open', 'work-ncmc-web')"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800">
                                 View project
                                 <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor"
                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -347,7 +374,7 @@
                                         d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                                         clip-rule="evenodd"></path>
                                 </svg>
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <div class="max-w-md rounded-lg border border-gray-500 lg:border-none shadow bg-[#201f23]">
@@ -357,12 +384,15 @@
                         </button>
                         <div class="p-5">
                             <button type="button" onclick="onClickToggleShowWorkModal('open', 'work-ncmc-alumni')">
-                                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">North
-                                    Central Mindanao College (NCMC) - School Alumni Website</h5>
+                                <h5 class="mb-2 text-xl font-bold tracking-tight text-white">
+                                    NCMC - Alumni Portal
+                                </h5>
                             </button>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Software Development</p>
-                            <a href="#"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            <p class="mb-3 font-normal text-gray-400">NCMC's alumni portal where an alumnus can
+                                register
+                                solely for school events and get-together.</p>
+                            <button type="button" onclick="onClickToggleShowWorkModal('open', 'work-ncmc-alumni')"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800">
                                 View project
                                 <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor"
                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -370,23 +400,25 @@
                                         d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                                         clip-rule="evenodd"></path>
                                 </svg>
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <div class="max-w-md rounded-lg border border-gray-500 lg:border-none shadow bg-[#201f23]">
                         <button type="button" onclick="onClickToggleShowWorkModal('open', 'work-interoptive')">
                             <img class="rounded-t-lg opacity-75 hover:opacity-100"
                                 src="./public/images/projects/interoptive/interoptive-dashboard.png"
-                                alt="Interoptive Dashboard" />
+                                alt="interOptive Dashboard" />
                         </button>
                         <div class="p-5">
                             <button type="button" onclick="onClickToggleShowWorkModal('open', 'work-interoptive')">
-                                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                    InterOptive</h5>
+                                <h5 class="mb-2 text-xl font-bold tracking-tight text-white">
+                                    interOptive
+                                </h5>
                             </button>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Software Development</p>
-                            <a href="#"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            <p class="mb-3 font-normal text-gray-400">InterOptive is a platform that builds dynamic
+                                surveys, forms and funnels that people can use to answer.</p>
+                            <button type="button" onclick="onClickToggleShowWorkModal('open', 'work-interoptive')"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800">
                                 View project
                                 <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor"
                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -394,7 +426,7 @@
                                         d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                                         clip-rule="evenodd"></path>
                                 </svg>
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -406,12 +438,14 @@
                         </button>
                         <div class="p-5">
                             <button type="button" onclick="onClickToggleShowWorkModal('open', 'work-ttutc-forms')">
-                                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Trinidad
-                                    and Tobago Unit Trust Corportation (TTUTC) Forms</h5>
+                                <h5 class="mb-2 text-xl font-bold tracking-tight text-white text-left">
+                                    Trinidad and Tobago Unit Trust Corportation (TTUTC) Forms
+                                </h5>
                             </button>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Software Development</p>
-                            <a href="#"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            <p class="mb-3 font-normal text-gray-400">TTUTC is a financial company located in
+                                Trinidad and Tobago.</p>
+                            <button type="button" onclick="onClickToggleShowWorkModal('open', 'work-ttutc-forms')"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800">
                                 View project
                                 <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor"
                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -419,7 +453,32 @@
                                         d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                                         clip-rule="evenodd"></path>
                                 </svg>
-                            </a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="max-w-md rounded-lg border border-gray-500 lg:border-none shadow bg-[#201f23]">
+                        <button type="button" onclick="onClickToggleShowWorkModal('open', 'work-imch-portal')">
+                            <img class="rounded-t-lg opacity-75 hover:opacity-100"
+                                src="./public/images/projects/freelance/imch-cropped.png" alt="IMCH Portal" />
+                        </button>
+                        <div class="p-5">
+                            <button type="button" onclick="onClickToggleShowWorkModal('open', 'work-imch-portal')">
+                                <h5 class="mb-2 text-xl font-bold tracking-tight text-white text-left">
+                                    Iligan Medical Center Hospital Portal
+                                </h5>
+                            </button>
+                            <p class="mb-3 font-normal text-gray-400">A CoVid-19 Form Portal for IMCH where the patients
+                                can book an appointment for CoVid-19 Vaccine.</p>
+                            <button type="button" onclick="onClickToggleShowWorkModal('open', 'work-imch-portal')"
+                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:outline-none bg-blue-600 hover:bg-blue-700 focus:ring-blue-800">
+                                View project
+                                <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -435,7 +494,13 @@
                         <div>
                             <button type="button" onclick="onClickViewExperience(this)"
                                 class="flex items-center justify-between w-full p-5 font-medium text-left border rounded-xl focus:ring-4 focus:ring-gray-800 border-gray-700 text-gray-400 bg-gray-800 hover:bg-gray-700 text-sm">
-                                <span>Software Developer @ Kaddy Pty Ltd</span>
+                                <div class="flex-grow flex justify-between me-4">
+                                    <span>
+                                        Software Developer @ Kaddy Pty Ltd&nbsp;&nbsp;
+                                        <span class="text-xs">(Full-time)</span>
+                                    </span>
+                                    <span>July 2021 - May 2023</span>
+                                </div>
                                 <svg class="w-6 h-6 rotate-180 shrink-0 accordion-icon" fill="currentColor"
                                     viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd"
@@ -445,86 +510,226 @@
                             </button>
                             <div class="accordion-collapse-body">
                                 <div class="p-5 border border-gray-700 bg-gray-900 mt-3">
-                                    <p class="mb-2 text-gray-500 dark:text-gray-400">Flowbite is an open-source library
-                                        of
-                                        interactive components built on top of Tailwind CSS including buttons,
-                                        dropdowns,
-                                        modals,
-                                        navbars, and more.</p>
-                                    <p class="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a
-                                            href="/docs/getting-started/introduction/"
-                                            class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and
-                                        start
-                                        developing websites even faster with components on top of Tailwind CSS.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <button type="button" onclick="onClickViewExperience(this)"
-                                class="flex items-center justify-between w-full p-5 font-medium text-left border rounded-xl focus:ring-4 focus:ring-gray-800 border-gray-700 text-gray-400 bg-gray-800 hover:bg-gray-700 text-sm">
-                                <span>Fullstack Developer @ IntelliWeb Media</span>
-                                <svg class="w-6 h-6 shrink-0 accordion-icon" fill="currentColor" viewBox="0 0 20 20"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </button>
-                            <div class="accordion-collapse-body hidden">
-                                <div class="p-5 border border-gray-700 bg-gray-900 mt-3">
-                                    <p class="mb-2 text-gray-400">Flowbite is first conceptualized
-                                        and
-                                        designed
-                                        using the Figma software so everything you see in the library has a design
-                                        equivalent in
-                                        our
-                                        Figma file.</p>
-                                    <p class="text-gray-400">Check out the <a href="https://flowbite.com/figma/"
-                                            class="text-blue-600 dark:text-blue-500 hover:underline">Figma design
-                                            system</a>
-                                        based
-                                        on the utility classes from Tailwind CSS and components from Flowbite.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <button type="button" onclick="onClickViewExperience(this)"
-                                class="flex items-center justify-between w-full p-5 font-medium text-left border rounded-xl focus:ring-4 focus:ring-gray-800 border-gray-700 text-gray-400 bg-gray-800 hover:bg-gray-700 text-sm">
-                                <span>Fullstack Developer @ Pixzel Digital</span>
-                                <svg class="w-6 h-6 shrink-0 accordion-icon" fill="currentColor" viewBox="0 0 20 20"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </button>
-                            <div class="accordion-collapse-body hidden">
-                                <div class="p-5 border border-gray-700 bg-gray-900 mt-3">
-                                    <p class="mb-2 text-gray-400">The main difference is that the
-                                        core
-                                        components
-                                        from Flowbite are open source under the MIT license, whereas Tailwind UI is a
-                                        paid
-                                        product.
-                                        Another difference is that Flowbite relies on smaller and standalone components,
-                                        whereas
-                                        Tailwind UI offers sections of pages.</p>
-                                    <p class="mb-2 text-gray-400">However, we actually recommend
-                                        using both
-                                        Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason
-                                        stopping
-                                        you
-                                        from using the best of two worlds.</p>
-                                    <p class="mb-2 text-gray-400">Learn more about these
-                                        technologies:</p>
                                     <ul class="pl-5 list-disc text-gray-400">
-                                        <li><a href="https://flowbite.com/pro/"
-                                                class="text-blue-500 hover:underline">Flowbite
-                                                Pro</a></li>
-                                        <li><a href="https://tailwindui.com/" rel="nofollow"
-                                                class="text-blue-500 hover:underline">Tailwind UI</a>
+                                        <li>
+                                            Working along with team members for daily support and maintenance that
+                                            includes development, design, and QA.
+                                        </li>
+                                        <li class="mt-2">
+                                            Designed and developed Kaddy's order tracking platform.
+                                        </li>
+                                        <li class="mt-2">
+                                            Third-party API integrations of Australia's carrier companies such as
+                                            Australia Post, CouriersPlease, Border Express, and company owned Kaddy
+                                            Fulfilment.
+                                        </li>
+                                        <li class="mt-2">
+                                            Third-party integration of WMS softwares such as CartonCloud and .WMS
                                         </li>
                                     </ul>
+                                    <div class="mt-4">
+                                        <span
+                                            class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+                                            PHP Laravel
+                                        </span>
+                                        <span
+                                            class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+                                            JavaScript
+                                        </span>
+                                        <span
+                                            class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+                                            React.js
+                                        </span>
+                                        <span
+                                            class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+                                            Next.js
+                                        </span>
+                                        <span
+                                            class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+                                            Redux
+                                        </span>
+                                        <span
+                                            class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+                                            Amazon Web Services (AWS)
+                                        </span>
+                                        <span
+                                            class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+                                            CI/CD
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="button" onclick="onClickViewExperience(this)"
+                                class="flex items-center justify-between w-full p-5 font-medium text-left border rounded-xl focus:ring-4 focus:ring-gray-800 border-gray-700 text-gray-400 bg-gray-800 hover:bg-gray-700 text-sm">
+                                <div class="flex-grow flex justify-between me-4">
+                                    <span>
+                                        Full-stack Developer @ interOptive&nbsp;&nbsp;
+                                        <span class="text-xs">(Freelance)</span>
+                                    </span>
+                                    <span>August 2022 - Oct 2022</span>
+                                </div>
+                                <svg class="w-6 h-6 rotate-180 shrink-0 accordion-icon" fill="currentColor"
+                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                            <div class="accordion-collapse-body hidden">
+                                <div class="p-5 border border-gray-700 bg-gray-900 mt-3">
+                                    <ul class="pl-5 list-disc text-gray-400">
+                                        <li>
+                                            Work with different tasks that the CEO needs for the platform.
+                                        </li>
+                                        <li class="mt-2">
+                                            Example task were to set a pricing plan for the user, which I used
+                                            Stripe API for this requirement.
+                                        </li>
+                                    </ul>
+                                    <div class="mt-4">
+                                        <span
+                                            class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+                                            PHP Laravel
+                                        </span>
+                                        <span
+                                            class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+                                            JavaScript
+                                        </span>
+                                        <span
+                                            class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+                                            jQuery
+                                        </span>
+                                        <span
+                                            class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+                                            Bootstrap
+                                        </span>
+                                        <span
+                                            class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+                                            Stripe API
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="button" onclick="onClickViewExperience(this)"
+                                class="flex items-center justify-between w-full p-5 font-medium text-left border rounded-xl focus:ring-4 focus:ring-gray-800 border-gray-700 text-gray-400 bg-gray-800 hover:bg-gray-700 text-sm">
+                                <div class="flex-grow flex justify-between me-4">
+                                    <span>
+                                        Full-stack Developer @ IntelliWeb Media&nbsp;&nbsp;
+                                        <span class="text-xs">(Freelance)</span>
+                                    </span>
+                                    <span>Jan 2021 - Apr 2021</span>
+                                </div>
+                                <svg class="w-6 h-6 shrink-0 accordion-icon" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                            <div class="accordion-collapse-body hidden">
+                                <div class="p-5 border border-gray-700 bg-gray-900 mt-3">
+                                    <ul class="pl-5 list-disc text-gray-400">
+                                        <li>
+                                            Automated filling up forms from a financial company (TTUTC) using Laravel
+                                            and
+                                            Laravel Backpack with e-signatures.
+                                        </li>
+                                        <li class="mt-2">
+                                            Supported and developed company's CRM software along with a senior
+                                            developer.
+                                        </li>
+                                    </ul>
+                                    <div class="mt-4">
+                                        <span
+                                            class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+                                            PHP Laravel
+                                        </span>
+                                        <span
+                                            class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+                                            Laravel Backpack
+                                        </span>
+                                        <span
+                                            class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+                                            JavaScript
+                                        </span>
+                                        <span
+                                            class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+                                            jQuery
+                                        </span>
+                                        <span
+                                            class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+                                            Bootstrap
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="button" onclick="onClickViewExperience(this)"
+                                class="flex items-center justify-between w-full p-5 font-medium text-left border rounded-xl focus:ring-4 focus:ring-gray-800 border-gray-700 text-gray-400 bg-gray-800 hover:bg-gray-700 text-sm">
+                                <div class="flex-grow flex justify-between me-4">
+                                    <span>
+                                        Software Developer @ Pixzel Digital&nbsp;&nbsp;
+                                        <span class="text-xs">(Full-time)</span>
+                                    </span>
+                                    <span>May 2019 - Mar 2021</span>
+                                </div>
+                                <svg class="w-6 h-6 shrink-0 accordion-icon" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                            <div class="accordion-collapse-body hidden">
+                                <div class="p-5 border border-gray-700 bg-gray-900 mt-3">
+                                    <ul class="pl-5 list-disc text-gray-400">
+                                        <li>
+                                            Started on this company as student intern.
+                                        </li>
+                                        <li class="mt-2">
+                                            I was absorbed as a developer, and was primarily assigned to develop from
+                                            scratch, a School Management Information System on one of their client, the
+                                            North Central Mindanao College (NCMC).
+                                        </li>
+                                        <li class="mt-2">
+                                            Within the client NCMC, with the help of other senior team members and
+                                            myself, we developed the school's official website, alumni portal, and their
+                                            school information system which helps the enrollment process, scholarship,
+                                            and
+                                            cashier functionalities.
+                                        </li>
+                                    </ul>
+                                    <div class="mt-4">
+                                        <span
+                                            class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+                                            PHP Laravel
+                                        </span>
+                                        <span
+                                            class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+                                            Vue.js
+                                        </span>
+                                        <span
+                                            class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+                                            JavaScript
+                                        </span>
+                                        <span
+                                            class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+                                            jQuery
+                                        </span>
+                                        <span
+                                            class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+                                            Bootstrap
+                                        </span>
+                                        <span
+                                            class="bg-blue-100 text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300">
+                                            Server Deployment
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -600,7 +805,10 @@
             document.getElementById("mobile-nav").classList.remove("block");
             document.getElementById("mobile-nav").classList.add("hidden");
 
-            document.getElementById("nav-under-main-section").classList.remove("hidden");
+            const expertiseSection = document.getElementById("expertise-section");
+            if (expertiseSection.getBoundingClientRect().top <= 800) {
+                document.getElementById("nav-under-main-section").classList.remove("hidden");
+            }
         };
 
         const onClickScrollToSection = (htmlSectionId, view = "desktop") => {
@@ -620,19 +828,23 @@
         };
 
         const onClickViewExperience = (el) => {
+            const accordionBody = el.parentElement.querySelector(".accordion-collapse-body");
+            const accordionIcon = el.parentElement.querySelector(".accordion-icon");
+
             let allBodies = document.querySelectorAll(".accordion-collapse-body");
             let allIcons = document.querySelectorAll(".accordion-icon");
 
             allBodies.forEach((bodyEl) => {
-                bodyEl.classList.add("hidden");
+                if (accordionBody !== bodyEl) {
+                    bodyEl.classList.add("hidden");
+                }
             });
 
             allIcons.forEach((iconEl) => {
-                iconEl.classList.remove("rotate-180");
+                if (accordionIcon !== iconEl) {
+                    iconEl.classList.remove("rotate-180");
+                }
             });
-
-            const accordionBody = el.parentElement.querySelector(".accordion-collapse-body");
-            const accordionIcon = el.parentElement.querySelector(".accordion-icon");
 
             if (accordionBody.classList.contains("hidden")) {
                 accordionBody.classList.remove("hidden");
