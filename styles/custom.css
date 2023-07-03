@@ -115,10 +115,6 @@ h5 {
     background: linear-gradient(65deg, #FF6B2B 0%, #FF6B2B 100%, rgba(255, 209, 0, 0) 100%);
 }
 
-.container-styled-h3 {
-    margin-top: 14px;
-}
-
 .container-styled-h3::after {
     opacity: 0.3;
     content: '';
